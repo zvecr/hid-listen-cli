@@ -19,10 +19,10 @@
     "test": "mocha"
   },
   "dependencies": {
-    "@oclif/command": "^1",
-    "@oclif/config": "^1",
-    "@oclif/plugin-help": "^2",
-    "hid-listen": "1.0.0"
+    "@oclif/command": "^1.5.13",
+    "@oclif/config": "^1.13.0",
+    "@oclif/plugin-help": "^2.1.6",
+    "hid-listen": "zvecr/hid-listen"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
