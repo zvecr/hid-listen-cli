@@ -17,6 +17,7 @@ mockery.enable({
 });
 
 const cmd = require('..');
+const conf = require('../package.json');
 
 describe('hid_listen', () => {
   test
@@ -24,7 +25,7 @@ describe('hid_listen', () => {
     .do(() => cmd.run(['--version']))
     .catch('EEXIT: 0')
     .it('prints version', (ctx) => {
-      expect(ctx.stdout).to.contain('hid-listen-cli/1.0.0');
+      expect(ctx.stdout).to.contain(`hid-listen-cli/${conf.version}`);
     });
 
   test
