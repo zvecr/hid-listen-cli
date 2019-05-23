@@ -42,4 +42,28 @@ describe('hid_listen', () => {
     .it('prints debug lines', (ctx) => {
       expect(ctx.stdout).to.contain('asdf');
     });
+
+  test
+    .stdout()
+    .do(() => cmd.run([]))
+    .do(() => ee.emit('connect'))
+    .it('prints connection events', (ctx) => {
+      expect(ctx.stdout).to.contain('Listening');
+    });
+
+  test
+    .stdout()
+    .do(() => cmd.run([]))
+    .do(() => ee.emit('disconnect'))
+    .it('prints disconnection events', (ctx) => {
+      expect(ctx.stdout).to.contain('Device disconnected');
+    });
+
+  test
+    .stdout()
+    .do(() => cmd.run([]))
+    .do(() => Array.from({ length: 5 }).forEach(() => ee.emit('tick')))
+    .it('prints waiting for device indicators', (ctx) => {
+      expect(ctx.stdout).to.contain('.....');
+    });
 });
