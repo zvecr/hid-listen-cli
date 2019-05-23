@@ -1,6 +1,6 @@
 {
   "name": "hid-listen-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Prints out debugging information from usb hid devices",
   "author": "zvecr",
   "license": "MIT",
