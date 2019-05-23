@@ -2,8 +2,13 @@
   "name": "hid-listen-cli",
   "version": "1.1.1",
   "description": "Prints out debugging information from usb hid devices",
-  "author": "zvecr",
+  "author": "zvecr <npm@zvecr.com> (http://zvecr.com/)",
   "license": "MIT",
+  "repository": "zvecr/hid-listen-cli",
+  "homepage": "https://github.com/zvecr/hid-listen-cli#readme",
+  "keywords": [
+    "hid_listen"
+  ],
   "main": "src/index.js",
   "bin": {
     "hid_listen": "./bin/run"
