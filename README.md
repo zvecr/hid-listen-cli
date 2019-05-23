@@ -9,14 +9,14 @@ NodeJS implementation of <https://www.pjrc.com/teensy/hid_listen.html>.
 
 ## Install
 
-```
+```shell
 $ npm install -g hid-listen-cli
 ```
 
 ## Usage
 
 ```shell
-hid_listen --help
+$ hid_listen --help
 Print out debugging information from usb hid devices.
 
 USAGE
