@@ -4,7 +4,7 @@ const HIDListen = require('hid-listen');
 class HIDListenCli extends Command {
   async run() {
     // eslint-disable-next-line no-unused-vars
-    const { flagz } = this.parse(HIDListenCli);
+    const { flags: flagz } = this.parse(HIDListenCli);
 
     console.log('Waiting for device:');
     const inst = new HIDListen();
